@@ -1,0 +1,133 @@
+/* Estilos gerais - Mobile First */
+
+/* seletor de tipo para elemento pai */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* combinação de seletores */
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+main {
+    padding: 1rem;
+    max-width: 960px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*rgba -verm,verde,azul,alpha*/
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+section {
+    margin-bottom: 2rem; /*espaçamento entre as seções*/
+}
+
+section h2 {
+    color: #188863;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.content-columns {
+    display: block;
+}
+
+.column-item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-sizing: border-box; /*garante q o padding não aumente de tamanho */
+    background-color: #fcfcfc;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* estilo responsivo p img */
+.responsive-img {
+    max-width: 100%; /*garantindo q a img não vai exceder a largura do container*/
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+/* Media Queries + breakpoints */
+/*tablet  e smart--> 768px*/
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    /* o container .content-columns vai se tornar flex p o tablet */
+    .content-columns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .column-item {
+        flex: 1 1 calc(50% - 1rem); /*duas colunas com um gap de espaçamento*/
+        margin-bottom: 1rem;
+    }
+
+    /* > combinador de filho direto: ele especifica q a regra se aplicará somente ao elemento filho
+    nth-child(odd): pseudoclasse - aplica em elementos filhos do mesmo pai */
+    .content-columns > .column-item:nth-child(odd) {
+        margin-right: 1rem;
+    }
+}
+
+/* Desktop - breakpoint - 1024px */
+@media (min-width: 1024px) {
+    header {
+        padding: 2rem 0;
+    }
+
+    main {
+        padding: 3rem;
+    }
+
+    .column-item {
+        flex: 1 1 calc(33.33% - 1rem); /*3 colunas com espaçamento*/
+    }
+
+    /* resetar margens de colunas anteriores a aplicar novas para as 3 colunas */
+    .content-columns > .column-item:nth-child(odd) {
+        margin-right: 0;
+    }
+
+    .content-columns > .column-item:not(:last-child) {
+        margin-right: 1rem;
+    }
+}

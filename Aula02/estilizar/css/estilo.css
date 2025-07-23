@@ -45,3 +45,14 @@ input {
     border: #f00 solid 1px;
     border-radius: 4px;
 }
+
+#layout {
+    max-width: 100%;
+}
+
+/* nomenclatura BEM
+block, elemento, modificar */
+.container-imagem {
+    width: 80%;
+    border-radius: 5px;
+}
