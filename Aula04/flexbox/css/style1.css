@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex; /* para centralizar o container-flex na página */
+    min-height: 100vh; /* ocupando a altura total da viewport */
+    justify-content: center; /* centralizar horizontalmente o container-flex */
+    align-items: center; /* centralizar verticalmente o container-flex */
+    background-color: #f0f0f0;
+}
+
+.container-flex {
+    display: flex; /* modifica o container em um container flex */
+    background-color: #3498db; 
+    padding: 20px;
+    border-radius: 8px;
+    gap: 10px; /* espaço entre os itens */
+    width: 80%; /* largura para demonstração */
+    height: 300px; /* altura para demonstração */
+    justify-content: center; /* centralizar os itens horizontalmente */
+    align-items: center; /* centralizar os itens verticalmente */
+}
+
+.item {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+    flex-shrink: 0; /* impede que os itens 'encolham' */
+}
+
+.item-1 {
+    background-color: #e74c3c; 
+}
+
+.item-2 {
+    background-color: #2ecc71; 
+}
+
+.item-3 {
+    background-color: #f1c40f; 
+}
