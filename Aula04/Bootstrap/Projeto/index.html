@@ -17,7 +17,15 @@
     <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Saga Star Wars</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -29,14 +37,22 @@
               <a class="nav-link" href="#">Personagens</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 Episódios
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Ameaça Fantasma</a></li>
                 <li><a class="dropdown-item" href="#">Guerra do Clones</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Império Contra-Ataca</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Império Contra-Ataca</a>
+                </li>
               </ul>
             </li>
             <li class="nav-item">
@@ -44,15 +60,22 @@
             </li>
           </ul>
           <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Digite sua pesquisa" aria-label="Search"/>
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Digite sua pesquisa"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Buscar
+            </button>
           </form>
         </div>
       </div>
     </nav>
 
     <section class="hero-section">
-      <header>        
+      <header>
         <h1>StarWars</h1>
         <p>A melhor saga de todos os tempos!</p>
         <div class="container">
@@ -65,10 +88,88 @@
     <section>
       <main class="container">
         <article class="main-principal">
-            <h2>A Saga da família Skywalker</h2>
-            <hr/>
-            
-            
+          <h2>A Saga da família Skywalker</h2>
+          <hr />
+          <!-- Sistema de Grid -->
+          <div class="container text-center">
+            <div class="row border">
+              <div class="col border">coluna</div>
+              <div class="col border">coluna</div>
+              <div class="col border">coluna</div>
+              <div class="col border">coluna</div>
+              <div class="col border">coluna</div>
+              <div class="col border">coluna</div>
+              <div class="col border">coluna</div>
+              <div class="col border">coluna</div>
+              <div class="col border">coluna</div>
+              <div class="col border">coluna</div>
+              <div class="col border">coluna</div>
+              <div class="col border">coluna</div>
+            </div>
+            <div class="row border">
+              <div class="col border">Coluna</div>
+              <div class="col border">Coluna</div>
+              <div class="col border">Coluna</div>
+              <div class="col border">Coluna</div>
+            </div>
+          </div>
+          <hr />
+          <div class="container text-center">
+            <div class="row justify-content-md-center">
+              <div class="col col-lg-2 border">Textinho</div>
+              <div class="col-md-auto border">Coluna Dois</div>
+              <div class="col col-lg-2 border">Textinho Três</div>
+            </div>
+          </div>
+          <hr />
+
+          <div class="container text-center">
+            <div class="row border">
+              <div class="col-md-4 border">Tamanho 4</div>
+              <div class="col-md-8 border">Tamanho 8</div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="card" style="width: 18rem">
+                  <img src="./img/img1.jpg" class="card-img-top" alt="StarWars" />
+                  <div class="card-body">
+                    <h5 class="card-title">Estrela da Morte</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the cards content.
+                    </p>
+                    <a href="#" class="btn btn-danger">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card" style="width: 18rem">
+                  <img src="./img/img2.jpg" class="card-img-top" alt="StarWars" />
+                  <div class="card-body">
+                    <h5 class="card-title">Darth Wader</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card’s content.
+                    </p>
+                    <a href="#" class="btn btn-danger">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card" style="width: 18rem">
+                  <img src="./img/img3.jpg" class="card-img-top" alt="StarWars" />
+                  <div class="card-body">
+                    <h5 class="card-title">Grogu</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card’s content.
+                    </p>
+                    <a href="#" class="btn btn-danger">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </article>
       </main>
     </section>
@@ -76,9 +177,8 @@
     <section>
       <footer>
         <div class="rodape text-rodape">
-            <p class="p-rodape">&copy; 2025 - VemSerVs-16</p>
-            <p>Template feito em Bootstrap</p>
-            
+          <p class="p-rodape">&copy; 2025 - VemSerVs-16</p>
+          <p>Template feito em Bootstrap</p>
         </div>
       </footer>
     </section>
